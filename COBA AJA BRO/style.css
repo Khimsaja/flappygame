@@ -1,0 +1,114 @@
+/* Styling untuk kontainer game */
+#game-container {
+    width: 400px; /* Lebar kontainer game */
+    height: 600px; /* Tinggi kontainer game */
+    background-color: #87CEFA; /* Warna biru langit sebagai latar belakang */
+    position: relative; /* Menyusun elemen di dalam kotak permainan */
+    overflow: hidden; /* Memastikan elemen di luar kontainer tidak terlihat */
+    border: 2px solid black; /* Border untuk menunjukkan batas permainan */
+}
+
+/* Styling untuk burung */
+#bird {
+    position: absolute; /* Posisi burung diatur absolut */
+    width: 40px; /* Lebar burung */
+    height: 40px; /* Tinggi burung */
+    background-image : url(deankt2.jpg); /* Warna burung kuning */
+    background-size: cover; /* Membuat burung berbentuk lingkaran */
+    top: 250px; /* Posisi vertikal awal burung */
+    left: 50px; /* Posisi horizontal burung */
+}
+
+/* Styling untuk rintangan bawah */
+.obstacle {
+    position: absolute; /* Posisi rintangan diatur absolut */
+    width: 50px; /* Lebar rintangan */
+    background-color: rgb(128, 0, 0); /* Warna rintangan hijau */
+    bottom: 0; /* Rintangan berada di bagian bawah kontainer */
+}
+
+/* Styling untuk rintangan atas */
+.obstacle-top {
+    position: absolute; /* Posisi rintangan diatur absolut */
+    width: 50px; /* Lebar rintangan atas */
+    background-color: rgb(128, 0, 0); /* Warna rintangan atas hijau */
+    top: 0; /* Rintangan berada di bagian atas kontainer */
+}
+
+/* Styling untuk menu */
+#menu {
+    width: 400px; /* Lebar menu sesuai dengan kontainer game */
+    height: 600px; /* Tinggi menu sesuai dengan kontainer game */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+#menu h1 {
+    font-size: 40px; /* Ukuran teks judul game */
+    margin-bottom: 20px;
+}
+
+/* Tombol Play */
+#play-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#play-button:hover {
+    background-color: #45a049;
+}
+
+/* Tombol Sound */
+#sound-toggle {
+    margin-top: 20px;
+}
+
+/* Styling untuk skor */
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 300px;
+}
+
+#game-over button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#game-over button:hover {
+    background-color: #0056b3;
+}
